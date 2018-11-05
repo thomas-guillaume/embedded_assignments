@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    private EditText loggin;
+    private EditText email;
     private EditText password;
     private EditText password_bis;
     private Button confirm;
@@ -19,7 +19,7 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        loggin = (EditText)findViewById(R.id.signup_loggin);
+        email = (EditText)findViewById(R.id.signup_email);
         password = (EditText)findViewById(R.id.signup_password);
         password_bis = (EditText)findViewById(R.id.signup_password_bis);
         confirm = (Button)findViewById(R.id.signup_confirm);
@@ -40,7 +40,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private boolean testConnection() {
-        // verify the loggin and password
+        // verify the email and passwords
         return true;
     }
 }

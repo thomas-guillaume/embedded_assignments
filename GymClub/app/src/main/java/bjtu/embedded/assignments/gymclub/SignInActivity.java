@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 public class SignInActivity extends AppCompatActivity {
 
-    private EditText loggin;
+    private EditText email;
     private EditText password;
     private Button confirm;
 
@@ -18,7 +18,7 @@ public class SignInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        loggin = (EditText)findViewById(R.id.signin_loggin);
+        email = (EditText)findViewById(R.id.signin_email);
         password = (EditText)findViewById(R.id.signin_password);
         confirm = (Button)findViewById(R.id.signin_confirm);
 
@@ -38,7 +38,7 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     private boolean testConnection() {
-        // verify the loggin and password
+        // verify the email and password
         return true;
     }
 }
