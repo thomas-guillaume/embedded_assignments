@@ -31,6 +31,16 @@
         android:hint="Confirm new password"/>
 
     <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm new password"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"/>
+
+    <Button
+        android:id="@+id/settings_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Settings"
@@ -39,6 +49,7 @@
         android:layout_margin="30dp"/>
 
     <Button
+        android:id="@+id/logout_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log out"
