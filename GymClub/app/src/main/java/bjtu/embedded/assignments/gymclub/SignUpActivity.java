@@ -40,7 +40,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private boolean testConnection() {
-        // verify the email and passwords
+        // verify the email and passwords and create account
         return true;
     }
 }
