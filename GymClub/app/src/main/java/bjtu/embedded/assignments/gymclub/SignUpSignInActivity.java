@@ -37,13 +37,12 @@ public class SignUpSignInActivity extends AppCompatActivity {
         AccessToken accessToken = AccessToken.getCurrentAccessToken();
         boolean isLoggedIn = accessToken != null && !accessToken.isExpired();
 
-        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
-
-        callbackManager = CallbackManager.Factory.create();
 
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
 
+
+        callbackManager = CallbackManager.Factory.create();
 
         loginButton = (LoginButton)findViewById(R.id.login_button);
         loginButton.setReadPermissions(Arrays.asList(EMAIL));
@@ -66,24 +65,24 @@ public class SignUpSignInActivity extends AppCompatActivity {
             }
         });
 
-        LoginManager.getInstance().registerCallback(callbackManager,
-                new FacebookCallback<LoginResult>() {
-                    @Override
-                    public void onSuccess(LoginResult loginResult) {
-                        // App code
-                    }
 
-                    @Override
-                    public void onCancel() {
-                        // App code
-                    }
+        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
+        LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                // App code
+            }
 
-                    @Override
-                    public void onError(FacebookException exception) {
-                        // App code
-                    }
-                });
+            @Override
+            public void onCancel() {
+                // App code
+            }
 
+            @Override
+            public void onError(FacebookException exception) {
+                // App code
+            }
+        });
 
 
         sign_up_btn = (Button)findViewById(R.id.sign_up_btn);
