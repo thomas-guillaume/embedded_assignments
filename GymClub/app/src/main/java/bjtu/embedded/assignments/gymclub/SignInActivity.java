@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import bjtu.embedded.assignments.gymclub.Model.DatabaseHelper;
+
 public class SignInActivity extends AppCompatActivity {
 
     DatabaseHelper helper = new DatabaseHelper(this);
@@ -51,7 +53,7 @@ public class SignInActivity extends AppCompatActivity {
             Toast error = Toast.makeText(SignInActivity.this, "Username & Password don't match !", Toast.LENGTH_LONG);
             error.show();
 
-            return false;
+            return true;
         }
 
         return true;

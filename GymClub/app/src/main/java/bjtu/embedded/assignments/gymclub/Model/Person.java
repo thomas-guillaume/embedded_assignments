@@ -1,4 +1,4 @@
-package bjtu.embedded.assignments.gymclub;
+package bjtu.embedded.assignments.gymclub.Model;
 
 public class Person {
 

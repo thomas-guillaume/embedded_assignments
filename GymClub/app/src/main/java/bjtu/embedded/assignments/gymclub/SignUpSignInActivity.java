@@ -93,9 +93,6 @@ public class SignUpSignInActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(SignUpSignInActivity.this, SignUpActivity.class);
                 startActivity(i);
-
-                // close this activity
-                finish();
             }
         });
 
@@ -104,9 +101,6 @@ public class SignUpSignInActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(SignUpSignInActivity.this, SignInActivity.class);
                 startActivity(i);
-
-                // close this activity
-                finish();
             }
         });
     }

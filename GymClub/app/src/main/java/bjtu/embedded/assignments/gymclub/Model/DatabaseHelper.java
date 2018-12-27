@@ -1,10 +1,12 @@
-package bjtu.embedded.assignments.gymclub;
+package bjtu.embedded.assignments.gymclub.Model;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import bjtu.embedded.assignments.gymclub.Model.Person;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 

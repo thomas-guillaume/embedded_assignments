@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import bjtu.embedded.assignments.gymclub.Model.DatabaseHelper;
+import bjtu.embedded.assignments.gymclub.Model.Person;
+
 public class SignUpActivity extends AppCompatActivity {
 
     DatabaseHelper helper = new DatabaseHelper(this);
