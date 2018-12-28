@@ -34,10 +34,6 @@ public class SignUpSignInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up_sign_in);
 
         // Login with Facebook
-        AccessToken accessToken = AccessToken.getCurrentAccessToken();
-        boolean isLoggedIn = accessToken != null && !accessToken.isExpired();
-
-
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
 

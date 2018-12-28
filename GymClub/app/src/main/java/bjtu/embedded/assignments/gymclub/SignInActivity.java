@@ -53,7 +53,7 @@ public class SignInActivity extends AppCompatActivity {
             Toast error = Toast.makeText(SignInActivity.this, "Username & Password don't match !", Toast.LENGTH_LONG);
             error.show();
 
-            return true;
+            return false;
         }
 
         return true;
